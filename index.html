@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>穿搭魔法书 | 身材拯救计划</title>
+    <title>🍭甜系穿搭魔法指南｜4大体型全攻略</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
@@ -12,30 +12,40 @@
             --mint: #98FB98;
         }
         body {
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-family: 'Comic Sans MS', '幼圆', cursive;
             line-height: 1.6;
             max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #FFF9FB;
+            margin: 20px auto;
+            padding: 30px;
+            background: #FFF9FB url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQAKrVq36zwjjgzhhYWGMYAEYB8RmROaABADeOQ8CXl/xfgAAAABJRU5ErkJggg==');
             border: 3px solid var(--pink);
-            border-radius: 15px;
-            box-shadow: 0 0 20px #FFE4E1;
+            border-radius: 20px;
+            box-shadow: 0 0 30px #FFE4E1;
         }
         h1 {
             color: var(--coral);
-            font-size: 32px;
+            font-size: 36px;
             text-align: center;
+            margin: 30px 0;
             text-shadow: 2px 2px #FFF;
-            margin: 20px 0;
+            position: relative;
+        }
+        h1::after {
+            content: '✨';
+            position: absolute;
+            right: -30px;
+            top: -15px;
+            font-size: 40px;
+            animation: sparkle 1.5s infinite;
         }
         .section {
-            background: white;
-            padding: 20px;
-            margin: 20px 0;
+            background: rgba(255,255,255,0.9);
+            padding: 25px;
+            margin: 25px 0;
             border-radius: 15px;
             border: 2px dashed var(--mint);
             position: relative;
+            backdrop-filter: blur(2px);
         }
         .section::before {
             content: '✨';
@@ -44,19 +54,155 @@
             top: -15px;
             font-size: 24px;
         }
-        .warning {
-            color: #FF4444;
+        .image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .image-grid img {
+            width: 100%;
+            border-radius: 15px;
+            border: 3px solid var(--pink);
+            transition: transform 0.3s;
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+        }
+        .image-grid img:hover {
+            transform: scale(1.03);
+        }
+        .warning-box {
             background: #FFE5E5;
-            padding: 10px;
-            border-radius: 10px;
-            margin: 15px 0;
+            border-left: 5px solid #FF4444;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .tip-box {
+            background: #E8FFF5;
+            border-left: 5px solid #00C897;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .hashtag {
+            display: inline-block;
+            background: linear-gradient(45deg, #FFB6C1, #FF69B4);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            margin: 5px;
+            font-size: 14px;
+            transition: transform 0.2s;
+        }
+        .hashtag:hover {
+            transform: rotate(-3deg);
+        }
+        @keyframes sparkle {
+            0% { opacity: 0.5; }
+            50% { opacity: 1; }
+            100% { opacity: 0.5; }
         }
     </style>
 </head>
 <body>
-    <h1><i class="fas fa-magic"></i> 穿搭魔法书</h1>
+    <h1><i class="fas fa-hat-wizard"></i> 甜系穿搭魔法指南</h1>
+
+    <!-- 梨形身材 -->
     <div class="section">
-        <!-- 内容区 -->
+        <h2><span class="emoji">🍐</span> 梨形公主拯救计划</h2>
+        <div class="image-grid">
+            <img src="images/pear-bad.jpg" alt="错误示范：紧身裤+短上衣">
+            <img src="images/pear-good.jpg" alt="正确示范：A字裙+短靴">
+        </div>
+        <div class="warning-box">
+            <h3><i class="fas fa-ban"></i> 危险禁区</h3>
+            <ul>
+                <li>紧身低腰牛仔裤 <i class="fas fa-exclamation-triangle"></i></li>
+                <li>膨胀感蓬蓬裙 <i class="fas fa-umbrella-beach"></i></li>
+            </ul>
+        </div>
+        <div class="tip-box">
+            <h3><i class="fas fa-wand-magic-sparkles"></i> 仙女配方</h3>
+            <ul>
+                <li>A字裙+短靴 <i class="fas fa-heart"></i></li>
+                <li>收腰西装+直筒裤 <i class="fas fa-star"></i></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 苹果型身材 -->
+    <div class="section">
+        <h2><span class="emoji">🍎</span> 苹果甜心改造计划</h2>
+        <div class="image-grid">
+            <img src="images/apple-bad.jpg" alt="错误示范：高领针织衫">
+            <img src="images/apple-good.jpg" alt="正确示范：V领连衣裙">
+        </div>
+        <div class="warning-box">
+            <h3><i class="fas fa-ban"></i> 危险禁区</h3>
+            <ul>
+                <li>高领紧身针织 <i class="fas fa-exclamation-triangle"></i></li>
+                <li>腰部复杂装饰 <i class="fas fa-ribbon"></i></li>
+            </ul>
+        </div>
+        <div class="tip-box">
+            <h3><i class="fas fa-wand-magic-sparkles"></i> 仙女配方</h3>
+            <ul>
+                <li>大V领衬衫+烟管裤 <i class="fas fa-heart"></i></li>
+                <li>H型连衣裙+腰带 <i class="fas fa-star"></i></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- H型身材 -->
+    <div class="section">
+        <h2><span class="emoji">📏</span> H型女孩曲线计划</h2>
+        <div class="image-grid">
+            <img src="images/h-bad.jpg" alt="错误示范：直筒连衣裙">
+            <img src="images/h-good.jpg" alt="正确示范：泡泡袖+包臀裙">
+        </div>
+        <div class="warning-box">
+            <h3><i class="fas fa-ban"></i> 危险禁区</h3>
+            <ul>
+                <li>直筒吊带裙 <i class="fas fa-exclamation-triangle"></i></li>
+                <li>oversize卫衣套装 <i class="fas fa-tshirt"></i></li>
+            </ul>
+        </div>
+        <div class="tip-box">
+            <h3><i class="fas fa-wand-magic-sparkles"></i> 仙女配方</h3>
+            <ul>
+                <li>泡泡袖上衣+包臀裙 <i class="fas fa-heart"></i></li>
+                <li>收腰风衣+喇叭裤 <i class="fas fa-star"></i></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 沙漏型身材 -->
+    <div class="section">
+        <h2><span class="emoji">⏳</span> 沙漏辣妹进化论</h2>
+        <div class="image-grid">
+            <img src="images/hourglass-bad.jpg" alt="错误示范：宽松外套">
+            <img src="images/hourglass-good.jpg" alt="正确示范：裹身裙">
+        </div>
+        <div class="warning-box">
+            <h3><i class="fas fa-ban"></i> 危险禁区</h3>
+            <ul>
+                <li>男友风外套 <i class="fas fa-exclamation-triangle"></i></li>
+                <li>直筒吊带裙 <i class="fas fa-tshirt"></i></li>
+            </ul>
+        </div>
+        <div class="tip-box">
+            <h3><i class="fas fa-wand-magic-sparkles"></i> 仙女配方</h3>
+            <ul>
+                <li>裹身裙+尖头鞋 <i class="fas fa-heart"></i></li>
+                <li>短top+高腰微喇裤 <i class="fas fa-star"></i></li>
+            </ul>
+        </div>
+    </div>
+
+    <div style="text-align:center; margin:40px 0;">
+        <span class="hashtag">#穿搭魔法书</span>
+        <span class="hashtag">#体型诊断</span>
+        <span class="hashtag">#少女心穿搭</span>
     </div>
 </body>
 </html>
